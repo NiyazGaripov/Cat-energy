@@ -1,4 +1,4 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Кэт энерджи»
 
 * Исполнитель: [Нияз Гарипов](https://htmlacademy.ru/profile/id617897).
 ---
@@ -15,8 +15,3 @@
 #### 8. Кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge и IE11;
 #### 9. Используемый шрифт: Oswald;
 #### 10. Используемый кодгайд: [Code Guide](http://codeguide.co/) by @mdo.
-
-[travis-image]: https://travis-ci.org/Cat-energy.svg?branch=master
-[travis-url]: https://travis-ci.org/Cat-energy
-[dependency-image]: https://david-dm.org/Cat-energy/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/Cat-energy?type=dev
