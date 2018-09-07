@@ -10,8 +10,13 @@
 </head>
 <body class="page">
   <header class="header">
-    <a class="logo" href="#">
-      <img src="img/vector/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+    <a class="logo" href="#" aria-label="Логотип Кэт энерджи">
+      <svg class="logo__icon" width="33" height="38">
+        <use xlink:href="img/sprite.svg#logo-mobile"></use>
+      </svg>
+      <svg class="logo__icon-text" width="101" height="18">
+        <use xlink:href="img/sprite.svg#logo-text"></use>
+      </svg>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
@@ -46,11 +51,17 @@
       <h2 class="visually-hidden">Программы питания</h2>
       <article class="program-card">
         <h3 class="program-card__title">Похудение</h3>
+        <svg class="program-card__icon" width="35" height="49">
+          <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
+        </svg>
         <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="program-card__link" href="#">Каталог Slim</a>
       </article>
       <article class="program-card">
         <h3 class="program-card__title">Набор массы</h3>
+        <svg class="program-card__icon" width="67" height="28">
+          <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
+        </svg>
         <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="program-card__link" href="#">Каталог Pro</a>
       </article>
@@ -122,28 +133,31 @@
       </picture>
     </article>
     <section class="social-info">
-      <div class="footer__logo">
-        <img src="img/vector/logo-text.svg" width="130" height="25" alt="Логотип Кэт энерджи">
-      </div>
+      <h2 class="visually-hidden">Информация о социальных сетях и копирайте</h2>
+      <a class="logo" href="#" aria-label="Логотип Кэт энерджи">
+        <svg class="logo__icon-text" width="101" height="18">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
       <ul class="socials">
         <li class="socials__item">
           <a class="socials__link" href="#">
             <svg class="socials__icon" width="22" height="12">
-              <use xlink:href="img/"></use>
+              <use xlink:href="img//sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link" href="#">
             <svg class="socials__icon" width="16" height="16">
-              <use xlink:href="img/"></use>
+              <use xlink:href="img//sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link" href="#">
             <svg class="socials__icon" width="10" height="19">
-              <use xlink:href="img/"></use>
+              <use xlink:href="img//sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
