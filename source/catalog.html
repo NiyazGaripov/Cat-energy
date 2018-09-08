@@ -35,7 +35,18 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Страница с каталогом продукции</h1>
-
+    <section class="catalog">
+      <h2 class="catalog__title">Каталог продукции</h2>
+      <div class="catalog__wrapper">
+        <article class="card">
+          <picture class="card__image">
+            <source media="(min-width: 1200px)" srcset="img/raster/chicken-small-desktop@1x.png 1x, img/raster/chicken-small-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/raster/chicken-small-tablet@1x.png 1x, img/raster/chicken-small-tablet@2x.png 2x">
+            <img src="img/raster/chicken-small-mobile@1x.jpg" srcset="img/raster/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом курицы 500 грамм">
+          </picture>
+        </article>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <section class="contact">
