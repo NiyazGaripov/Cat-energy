@@ -10,14 +10,16 @@
 </head>
 <body class="page">
   <header class="header">
-    <a class="logo" href="#" aria-label="Логотип Кэт энерджи">
-      <svg class="logo__icon" width="33" height="38">
-        <use xlink:href="img/sprite.svg#logo-mobile"></use>
-      </svg>
-      <svg class="logo__icon-text" width="101" height="18">
-        <use xlink:href="img/sprite.svg#logo-text"></use>
-      </svg>
-    </a>
+    <div class="container">
+      <a class="logo" href="#" aria-label="Логотип Кэт энерджи">
+        <svg class="logo__icon" width="33" height="38">
+          <use xlink:href="img/sprite.svg#logo-mobile"></use>
+        </svg>
+        <svg class="logo__icon-text" width="101" height="18">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
       <ul class="main-nav__list">
@@ -37,179 +39,193 @@
     <h1 class="visually-hidden">Страница с каталогом продукции</h1>
     <section class="catalog">
       <h2 class="catalog__title">Каталог продукции</h2>
-      <div class="catalog__wrapper">
+      <div class="container">
         <article class="card">
-          <picture class="card__image">
-            <source media="(min-width: 1200px)" srcset="img/raster/chicken-small-desktop@1x.png 1x, img/raster/chicken-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/raster/chicken-small-tablet@1x.png 1x, img/raster/chicken-small-tablet@2x.png 2x">
-            <img src="img/raster/chicken-small-mobile@1x.jpg" srcset="img/raster/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом курицы 500 грамм">
-          </picture>
-          <div class="card__details">
-            <h3 class="card__title">Cat Energy Pro 500 г</h3>
-            <table class="card__table">
-              <tr>
-                <td>Объём</td>
-                <td>500 г.</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Курица</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
-              </tr>
-            </table>
+          <div class="card__wrapper">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/raster/chicken-small-desktop@1x.png 1x, img/raster/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/chicken-small-tablet@1x.png 1x, img/raster/chicken-small-tablet@2x.png 2x">
+              <img src="img/raster/chicken-small-mobile@1x.jpg" srcset="img/raster/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом курицы 500 грамм">
+            </picture>
+            <div class="card__details">
+              <h3 class="card__title">Cat Energy Pro 500 г</h3>
+              <table class="card__table">
+                <tr>
+                  <td>Объём</td>
+                  <td>500 г.</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td>Курица</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td>700 Р.</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <a class="card__link" href="#">Заказать</a>
         </article>
         <article class="card">
-          <picture class="card__image">
-            <source media="(min-width: 1200px)" srcset="img/raster/chicken-big-desktop@1x.png 1x, img/raster/chicken-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/raster/chicken-big-tablet@1x.png 1x, img/raster/chicken-big-tablet@2x.png 2x">
-            <img src="img/raster/chicken-big-mobile@1x.jpg" srcset="img/raster/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом курицы 1000 грамм">
-          </picture>
-          <div class="card__details">
-            <h3 class="card__title">Cat Energy Pro 1000 г</h3>
-            <table class="card__table">
-              <tr>
-                <td>Объём</td>
-                <td>1000 г.</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Курица</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>1000 Р.</td>
-              </tr>
-            </table>
+          <div class="card__wrapper">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/raster/chicken-big-desktop@1x.png 1x, img/raster/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/chicken-big-tablet@1x.png 1x, img/raster/chicken-big-tablet@2x.png 2x">
+              <img src="img/raster/chicken-big-mobile@1x.jpg" srcset="img/raster/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом курицы 1000 грамм">
+            </picture>
+            <div class="card__details">
+              <h3 class="card__title">Cat Energy Pro 1000 г</h3>
+              <table class="card__table">
+                <tr>
+                  <td>Объём</td>
+                  <td>1000 г.</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td>Курица</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td>1000 Р.</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <a class="card__link" href="#">Заказать</a>
         </article>
         <article class="card">
-          <picture class="card__image">
-            <source media="(min-width: 1200px)" srcset="img/raster/fish-small-desktop@1x.png 1x, img/raster/fish-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/raster/fish-small-tablet@1x.png 1x, img/raster/fish-small-tablet@2x.png 2x">
-            <img src="img/raster/fish-small-mobile@1x.jpg" srcset="img/raster/fish-small-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом рыбы 500 грамм">
-          </picture>
-          <div class="card__details">
-            <h3 class="card__title">Cat Energy Pro 500 г</h3>
-            <table class="card__table">
-              <tr>
-                <td>Объём</td>
-                <td>500 г.</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рыба</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
-              </tr>
-            </table>
+          <div class="card__wrapper">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/raster/fish-small-desktop@1x.png 1x, img/raster/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/fish-small-tablet@1x.png 1x, img/raster/fish-small-tablet@2x.png 2x">
+              <img src="img/raster/fish-small-mobile@1x.jpg" srcset="img/raster/fish-small-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом рыбы 500 грамм">
+            </picture>
+            <div class="card__details">
+              <h3 class="card__title">Cat Energy Pro 500 г</h3>
+              <table class="card__table">
+                <tr>
+                  <td>Объём</td>
+                  <td>500 г.</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td>Рыба</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td>700 Р.</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <a class="card__link" href="#">Заказать</a>
         </article>
         <article class="card">
-          <picture class="card__image">
-            <source media="(min-width: 1200px)" srcset="img/raster/fish-big-desktop@1x.png 1x, img/raster/fish-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/raster/fish-big-tablet@1x.png 1x, img/raster/fish-big-tablet@2x.png 2x">
-            <img src="img/raster/fish-big-mobile@1x.jpg" srcset="img/raster/fish-big-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом рыбы 1000 грамм">
-          </picture>
-          <div class="card__details">
-            <h3 class="card__title">Cat Energy Pro 1000 г</h3>
-            <table class="card__table">
-              <tr>
-                <td>Объём</td>
-                <td>1000 г.</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рыба</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>1000 Р.</td>
-              </tr>
-            </table>
+          <div class="card__wrapper">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/raster/fish-big-desktop@1x.png 1x, img/raster/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/fish-big-tablet@1x.png 1x, img/raster/fish-big-tablet@2x.png 2x">
+              <img src="img/raster/fish-big-mobile@1x.jpg" srcset="img/raster/fish-big-mobile@2x.jpg 2x" alt="Cat Energy Pro со вкусом рыбы 1000 грамм">
+            </picture>
+            <div class="card__details">
+              <h3 class="card__title">Cat Energy Pro 1000 г</h3>
+              <table class="card__table">
+                <tr>
+                  <td>Объём</td>
+                  <td>1000 г.</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td>Рыба</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td>1000 Р.</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <a class="card__link" href="#">Заказать</a>
         </article>
         <article class="card">
-          <picture class="card__image">
-            <source media="(min-width: 1200px)" srcset="img/raster/buckwheat-small-desktop@1x.png 1x, img/raster/buckwheat-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/raster/buckwheat-small-tablet@1x.png 1x, img/raster/buckwheat-small-tablet@2x.png 2x">
-            <img src="img/raster/buckwheat-small-mobile@1x.jpg" srcset="img/raster/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Slim со вкусом гречки 500 грамм">
-          </picture>
-          <div class="card__details">
-            <h3 class="card__title">Cat Energy Slim 500 г</h3>
-            <table class="card__table">
-              <tr>
-                <td>Объём</td>
-                <td>500 г.</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Гречка</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>400 Р.</td>
-              </tr>
-            </table>
+          <div class="card__wrapper">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/raster/buckwheat-small-desktop@1x.png 1x, img/raster/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/buckwheat-small-tablet@1x.png 1x, img/raster/buckwheat-small-tablet@2x.png 2x">
+              <img src="img/raster/buckwheat-small-mobile@1x.jpg" srcset="img/raster/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Slim со вкусом гречки 500 грамм">
+            </picture>
+            <div class="card__details">
+              <h3 class="card__title">Cat Energy Slim 500 г</h3>
+              <table class="card__table">
+                <tr>
+                  <td>Объём</td>
+                  <td>500 г.</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td>Гречка</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td>400 Р.</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <a class="card__link" href="#">Заказать</a>
         </article>
         <article class="card">
-          <picture class="card__image">
-            <source media="(min-width: 1200px)" srcset="img/raster/buckwheat-big-desktop@1x.png 1x, img/raster/buckwheat-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/raster/buckwheat-big-tablet@1x.png 1x, img/raster/buckwheat-big-tablet@2x.png 2x">
-            <img src="img/raster/buckwheat-big-mobile@1x.jpg" srcset="img/raster/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim со вкусом гречки 1000 грамм">
-          </picture>
-          <div class="card__details">
-            <h3 class="card__title">Cat Energy Slim 1000 г</h3>
-            <table class="card__table">
-              <tr>
-                <td>Объём</td>
-                <td>1000 г.</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Гречка</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>700 Р.</td>
-              </tr>
-            </table>
+          <div class="card__wrapper">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/raster/buckwheat-big-desktop@1x.png 1x, img/raster/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/buckwheat-big-tablet@1x.png 1x, img/raster/buckwheat-big-tablet@2x.png 2x">
+              <img src="img/raster/buckwheat-big-mobile@1x.jpg" srcset="img/raster/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim со вкусом гречки 1000 грамм">
+            </picture>
+            <div class="card__details">
+              <h3 class="card__title">Cat Energy Slim 1000 г</h3>
+              <table class="card__table">
+                <tr>
+                  <td>Объём</td>
+                  <td>1000 г.</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td>Гречка</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td>700 Р.</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <a class="card__link" href="#">Заказать</a>
         </article>
         <article class="card">
-          <picture class="card__image">
-            <source media="(min-width: 1200px)" srcset="img/raster/rice-small-desktop@1x.png 1x, img/raster/rice-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/raster/rice-small-tablet@1x.png 1x, img/raster/rice-small-tablet@2x.png 2x">
-            <img src="img/raster/rice-small-mobile@1x.jpg" srcset="img/raster/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim со вкусом риса 500 грамм">
-          </picture>
-          <div class="card__details">
-            <h3 class="card__title">Cat Energy Slim 500 г</h3>
-            <table class="card__table">
-              <tr>
-                <td>Объём</td>
-                <td>500 г.</td>
-              </tr>
-              <tr>
-                <td>Вкус</td>
-                <td>Рис</td>
-              </tr>
-              <tr>
-                <td>Цена</td>
-                <td>500 Р.</td>
-              </tr>
-            </table>
+          <div class="card__wrapper">
+            <picture class="card__image">
+              <source media="(min-width: 1200px)" srcset="img/raster/rice-small-desktop@1x.png 1x, img/raster/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/raster/rice-small-tablet@1x.png 1x, img/raster/rice-small-tablet@2x.png 2x">
+              <img src="img/raster/rice-small-mobile@1x.jpg" srcset="img/raster/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim со вкусом риса 500 грамм">
+            </picture>
+            <div class="card__details">
+              <h3 class="card__title">Cat Energy Slim 500 г</h3>
+              <table class="card__table">
+                <tr>
+                  <td>Объём</td>
+                  <td>500 г.</td>
+                </tr>
+                <tr>
+                  <td>Вкус</td>
+                  <td>Рис</td>
+                </tr>
+                <tr>
+                  <td>Цена</td>
+                  <td>500 Р.</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <a class="card__link" href="#">Заказать</a>
         </article>
@@ -282,40 +298,42 @@
     </article>
     <section class="social-info">
       <h2 class="visually-hidden">Информация о социальных сетях и копирайте</h2>
-      <a class="logo" href="#" aria-label="Логотип Кэт энерджи">
-        <svg class="logo__icon-text" width="128" height="24">
-          <use xlink:href="img/sprite.svg#logo-text"></use>
-        </svg>
-      </a>
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Мы вконтакте">
-            <svg class="socials__icon" width="22" height="12">
-              <use xlink:href="img//sprite.svg#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Мы в инстаграме">
-            <svg class="socials__icon" width="16" height="16">
-              <use xlink:href="img//sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Мы в фейсбуке">
-            <svg class="socials__icon" width="10" height="19">
-              <use xlink:href="img//sprite.svg#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy
-          <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img//sprite.svg#logo-htmlacademy"></use>
+      <div class="container">
+        <a class="logo logo--footer" href="#" aria-label="Логотип Кэт энерджи">
+          <svg class="logo__icon-text" width="128" height="24">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
           </svg>
         </a>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы вконтакте">
+              <svg class="socials__icon" width="22" height="12">
+                <use xlink:href="img//sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в инстаграме">
+              <svg class="socials__icon" width="16" height="16">
+                <use xlink:href="img//sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в фейсбуке">
+              <svg class="socials__icon" width="10" height="19">
+                <use xlink:href="img//sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy
+            <svg class="copyright__icon" width="27" height="34" aria-label="Логотип HTML Academy">
+              <use xlink:href="img//sprite.svg#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </footer>
