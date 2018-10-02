@@ -36,85 +36,87 @@
   <main class="main">
     <h1 class="visually-hidden">Страница с подбором программы для питомца</h1>
     <section class="program">
-      <h2 class="program__title">Подбор программы</h2>
-      <p class="program__description">Заполните анкету и мы подберем  программу питания для вашего кота</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Персональные данные</legend>
-          <ul class="personal-data">
-            <li class="personal-data__item">
-              <label class="personal-data__label" for="name">Имя:*</label>
-              <input class="personal-data__input" id="name" type="text" name="name" placeholder="Барсик">
-            </li>
-            <li class="personal-data__item">
-              <label class="personal-data__label" for="weight">Вес (кг):*</label>
-              <input class="personal-data__input" id="weight" type="number" name="weight" placeholder="7">
-            </li>
-            <li class="personal-data__item">
-              <label class="personal-data__label" for="age">Возраст (лет):</label>
-              <input class="personal-data__input" id="age" type="number" name="age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Выбор цели</legend>
-          <ul class="goal">
-            <li class="goal__item">
-              <label class="goal__label" for="slim">Похудение</label>
-              <input class="goal__input" id="slim" type="radio" name="goal">
-            </li>
-            <li class="goal__item">
-              <label class="goal__label" for="muscle">Набор массы</label>
-              <input class="goal__input" id="muscle" type="radio" name="goal" checked>
-            </li>
-            <li class="goal__item">
-              <label class="goal__label" for="advice">Не знаю (нужен ваш совет)</label>
-              <input class="goal__input" id="advice" type="radio" name="goal">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <ul class="contact-data">
-            <li class="contact-data__item">
-              <label class="contact-data__label" for="user-email">E-mail:*</label>
-              <input class="contact-data__input" id="user-email" type="email" name="email" placeholder="kuklachev@gmail.com">
-            </li>
-            <li class="contact-data__item">
-              <label class="contact-data__label" for="user-phone">Телефон:*</label>
-              <input class="contact-data__input" id="user-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="comment">
-          <legend class="comment__legend">Комментарий</legend>
-          <label class="visually-hidden" for="user-comment">Оставляйте свои комментарии</label>
-          <textarea class="comment__textarea" id="user-comment" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Дополнительно</legend>
-          <ul class="additional-good">
-            <li class="additional-good__item">
-              <label class="additional-good__label" for="sweetener">Сахарозаменитель</label>
-              <input class="additional-good__input" id="sweetener" type="checkbox" name="sweetener" checked>
-            </li>
-            <li class="additional-good__item">
-              <label class="additional-good__label" for="water">Питьевая вода</label>
-              <input class="additional-good__input" id="water" type="checkbox" name="water">
-            </li>
-            <li class="additional-good__item">
-              <label class="additional-good__label" for="milk">Молоко</label>
-              <input class="additional-good__input" id="milk" type="checkbox" name="milk">
-            </li>
-            <li class="additional-good__item">
-              <label class="additional-good__label" for="vitamins">Витамины</label>
-              <input class="additional-good__input" id="vitamins" type="checkbox" name="vitamins">
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button" type="submit">Отправить заявку</button>
-        <span class="form__details">* — Обязательные поля</span>
-      </form>
+      <div class="container">
+        <h2 class="program__title">Подбор программы</h2>
+        <p class="program__description">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Персональные данные</legend>
+            <ul class="personal-data">
+              <li class="personal-data__item">
+                <label class="personal-data__label" for="name">Имя:*</label>
+                <input class="personal-data__input" id="name" type="text" name="name" placeholder="Барсик">
+              </li>
+              <li class="personal-data__item">
+                <label class="personal-data__label" for="weight">Вес (кг):*</label>
+                <input class="personal-data__input" id="weight" type="number" name="weight" placeholder="7">
+              </li>
+              <li class="personal-data__item">
+                <label class="personal-data__label" for="age">Возраст (лет):</label>
+                <input class="personal-data__input" id="age" type="number" name="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Выбор цели</legend>
+            <ul class="goal">
+              <li class="goal__item">
+                <label class="goal__label" for="slim">Похудение</label>
+                <input class="goal__input" id="slim" type="radio" name="goal">
+              </li>
+              <li class="goal__item">
+                <label class="goal__label" for="muscle">Набор массы</label>
+                <input class="goal__input" id="muscle" type="radio" name="goal" checked>
+              </li>
+              <li class="goal__item">
+                <label class="goal__label" for="advice">Не знаю (нужен ваш совет)</label>
+                <input class="goal__input" id="advice" type="radio" name="goal">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <ul class="contact-data">
+              <li class="contact-data__item">
+                <label class="contact-data__label" for="user-email">E-mail:*</label>
+                <input class="contact-data__input" id="user-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="contact-data__item">
+                <label class="contact-data__label" for="user-phone">Телефон:*</label>
+                <input class="contact-data__input" id="user-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="comment__legend">Комментарий</legend>
+            <label class="visually-hidden" for="user-comment">Оставляйте свои комментарии</label>
+            <textarea class="comment__textarea" id="user-comment" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Дополнительно</legend>
+            <ul class="additional-good">
+              <li class="additional-good__item">
+                <label class="additional-good__label" for="sweetener">Сахарозаменитель</label>
+                <input class="additional-good__input" id="sweetener" type="checkbox" name="sweetener" checked>
+              </li>
+              <li class="additional-good__item">
+                <label class="additional-good__label" for="water">Питьевая вода</label>
+                <input class="additional-good__input" id="water" type="checkbox" name="water">
+              </li>
+              <li class="additional-good__item">
+                <label class="additional-good__label" for="milk">Молоко</label>
+                <input class="additional-good__input" id="milk" type="checkbox" name="milk">
+              </li>
+              <li class="additional-good__item">
+                <label class="additional-good__label" for="vitamins">Витамины</label>
+                <input class="additional-good__input" id="vitamins" type="checkbox" name="vitamins">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+          <span class="form__details">* — Обязательные поля</span>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -128,7 +130,7 @@
       </div>
     </section>
     <article class="map">
-      <h2 class="map__title">Адрес офиса на карте</h2>
+      <h2 class="visually-hidden">Адрес офиса на карте</h2>
       <div class="map__interactive"></div>
       <picture class="map__picture">
         <source media="(min-width: 1200px)" srcset="img/raster/bg-map-desktop@1x.png 1x, img/raster/bg-map-desktop@2x.png 2x">
@@ -138,40 +140,42 @@
     </article>
     <section class="social-info">
       <h2 class="visually-hidden">Информация о социальных сетях и копирайте</h2>
-      <a class="logo" href="#" aria-label="Логотип Кэт энерджи">
-        <svg class="logo__icon-text" width="128" height="24">
-          <use xlink:href="img/sprite.svg#logo-text"></use>
-        </svg>
-      </a>
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Мы вконтакте">
-            <svg class="socials__icon" width="22" height="12">
-              <use xlink:href="img//sprite.svg#icon-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Мы в инстаграме">
-            <svg class="socials__icon" width="16" height="16">
-              <use xlink:href="img//sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#" aria-label="Мы в фейсбуке">
-            <svg class="socials__icon" width="10" height="19">
-              <use xlink:href="img//sprite.svg#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy
-          <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img//sprite.svg#logo-htmlacademy"></use>
+      <div class="container">
+        <a class="logo logo--footer" href="#" aria-label="Логотип Кэт энерджи">
+          <svg class="logo__icon-text" width="128" height="24">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
           </svg>
         </a>
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы вконтакте">
+              <svg class="socials__icon" width="22" height="12">
+                <use xlink:href="img//sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в инстаграме">
+              <svg class="socials__icon" width="16" height="16">
+                <use xlink:href="img//sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#" aria-label="Мы в фейсбуке">
+              <svg class="socials__icon" width="10" height="19">
+                <use xlink:href="img//sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">HTML Academy
+            <svg class="copyright__icon" width="27" height="34" aria-label="Логотип HTML Academy">
+              <use xlink:href="img//sprite.svg#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   </footer>
