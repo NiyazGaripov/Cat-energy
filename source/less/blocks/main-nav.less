@@ -1,3 +1,36 @@
+.main-nav {
+  &--closed .main-nav__toogle::before {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    right: 10px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: @black;
+    box-shadow: 0 10px 0 0 @black, 0 20px 0 0 @black;
+
+    transition: 0.4 s;
+  }
+}
+
+.main-nav__toogle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
