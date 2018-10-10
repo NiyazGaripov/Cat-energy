@@ -14,6 +14,33 @@
 
     transition: 0.4 s;
   }
+
+  &--opened .main-nav__toogle {
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 35px;
+      right: 19px;
+
+      width: 24px;
+      height: 2px;
+
+      background-color: @black;
+      border-radius: 10px;
+
+      transition: 0.4s;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .main-nav__toogle {
