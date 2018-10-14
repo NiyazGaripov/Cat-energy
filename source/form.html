@@ -18,7 +18,7 @@
         <use xlink:href="img/sprite.svg#logo-text"></use>
       </svg>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__toogle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -42,74 +42,74 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__fieldset">
             <legend class="visually-hidden">Персональные данные</legend>
-            <ul class="personal-data">
-              <li class="personal-data__item">
-                <label class="personal-data__label" for="name">Имя:*</label>
-                <input class="personal-data__input" id="name" type="text" name="name" placeholder="Барсик">
+            <ul class="data">
+              <li class="data__item">
+                <label class="data__label" for="name">Имя:*</label>
+                <input class="data__input" id="name" type="text" name="name" placeholder="Барсик">
               </li>
-              <li class="personal-data__item">
-                <label class="personal-data__label" for="weight">Вес (кг):*</label>
-                <input class="personal-data__input" id="weight" type="number" name="weight" placeholder="7">
+              <li class="data__item">
+                <label class="data__label" for="weight">Вес (кг):*</label>
+                <input class="data__input" id="weight" type="number" name="weight" placeholder="7">
               </li>
-              <li class="personal-data__item">
-                <label class="personal-data__label" for="age">Возраст (лет):</label>
-                <input class="personal-data__input" id="age" type="number" name="age" placeholder="7">
+              <li class="data__item">
+                <label class="data__label" for="age">Возраст (лет):</label>
+                <input class="data__input" id="age" type="number" name="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="visually-hidden">Выбор цели</legend>
-            <ul class="goal">
-              <li class="goal__item">
-                <label class="goal__label" for="slim">Похудение</label>
-                <input class="visually-hidden" id="slim" type="radio" name="goal">
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="slim">Похудение</label>
+                <input class="visually-hidden" id="slim" type="radio" name="form">
               </li>
-              <li class="goal__item">
-                <label class="goal__label" for="muscle">Набор массы</label>
-                <input class="visually-hidden" id="muscle" type="radio" name="goal" checked>
+              <li class="form__item">
+                <label class="form__label" for="muscle">Набор массы</label>
+                <input class="visually-hidden" id="muscle" type="radio" name="form" checked>
               </li>
-              <li class="goal__item">
-                <label class="goal__label" for="advice">Не знаю (нужен ваш совет)</label>
-                <input class="visually-hidden" id="advice" type="radio" name="goal">
+              <li class="form__item">
+                <label class="form__label" for="advice">Не знаю (нужен ваш совет)</label>
+                <input class="visually-hidden" id="advice" type="radio" name="form">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <ul class="contact-data">
-              <li class="contact-data__item">
-                <label class="contact-data__label" for="user-email">E-mail:*</label>
-                <input class="contact-data__input" id="user-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            <ul class="data">
+              <li class="data__item">
+                <label class="data__label" for="user-email">E-mail:*</label>
+                <input class="data__input" id="user-email" type="email" name="email" placeholder="kuklachev@gmail.com">
               </li>
-              <li class="contact-data__item">
-                <label class="contact-data__label" for="user-phone">Телефон:*</label>
-                <input class="contact-data__input" id="user-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              <li class="data__item">
+                <label class="data__label" for="user-phone">Телефон:*</label>
+                <input class="data__input" id="user-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="comment">
-            <legend class="comment__legend">Комментарий</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Комментарий</legend>
             <label class="visually-hidden" for="user-comment">Оставляйте свои комментарии</label>
-            <textarea class="comment__textarea" id="user-comment" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+            <textarea class="form__textarea" id="user-comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Дополнительно</legend>
-            <ul class="additional-good">
-              <li class="additional-good__item">
-                <label class="additional-good__label" for="sweetener">Сахарозаменитель</label>
-                <input class="additional-good__input" id="sweetener" type="checkbox" name="sweetener" checked>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="sweetener">Сахарозаменитель</label>
+                <input class="visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
               </li>
-              <li class="additional-good__item">
-                <label class="additional-good__label" for="water">Питьевая вода</label>
-                <input class="additional-good__input" id="water" type="checkbox" name="water">
+              <li class="form__item">
+                <label class="form__label" for="water">Питьевая вода</label>
+                <input class="visually-hidden" id="water" type="checkbox" name="water">
               </li>
-              <li class="additional-good__item">
-                <label class="additional-good__label" for="milk">Молоко</label>
-                <input class="additional-good__input" id="milk" type="checkbox" name="milk">
+              <li class="form__item">
+                <label class="form__label" for="milk">Молоко</label>
+                <input class="visually-hidden" id="milk" type="checkbox" name="milk">
               </li>
-              <li class="additional-good__item">
-                <label class="additional-good__label" for="vitamins">Витамины</label>
-                <input class="additional-good__input" id="vitamins" type="checkbox" name="vitamins">
+              <li class="form__item">
+                <label class="form__label" for="vitamins">Витамины</label>
+                <input class="visually-hidden" id="vitamins" type="checkbox" name="vitamins">
               </li>
             </ul>
           </fieldset>
