@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   font-size: 24px;
   font-weight: 400;
@@ -22,16 +22,28 @@
 
   width: 50px;
   height: 50px;
-  margin-right: 25px;
+  margin-right: 20px;
 
   background-color: @green;
   border-radius: 50%;
+}
+
+.program-card__icon {
+  position: absolute;
+  left: 8px;
+
+  &--pro {
+    bottom: 5px;
+    left: -8px;
+  }
 }
 
 .program-card__description {
   margin: 0;
   margin-bottom: 20px;
   padding-bottom: 20px;
+
+  line-height: 23px;
 
   box-shadow: 0 1px 0 0 darken(@gray, 5%);
 }
