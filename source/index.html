@@ -20,7 +20,7 @@
         </svg>
       </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__toogle" type="button" aria-label="Кнопка открытия/закрытия выпадающего меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -67,7 +67,7 @@
         <article class="program-card">
           <h3 class="program-card__title">
             <span class="program-card__decoration">
-              <svg class="program-card__icon" width="67" height="28">
+              <svg class="program-card__icon program-card__icon--pro" width="67" height="28">
                 <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
               </svg>
             </span>
@@ -82,16 +82,16 @@
       <div class="container">
       <h2 class="about__title">Как это работает</h2>
         <ul class="about__list">
-          <li class="about__item">
+          <li class="about__item about__item--leaf">
             <p class="about__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--powd">
             <p class="about__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item--dining">
             <p class="about__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="about__item">
+          <li class="about__item about__item-clock">
             <p class="about__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -106,29 +106,29 @@
           <div class="example__result">60 дней <span class="example__text">затрачено времени</span> </div>
         </div>
         <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
-        <div class="slider">
-          <div class="slider__before">
-            <picture class="slider__picture">
-              <source media="(min-width: 1200px)" srcset="img/raster/before-desktop@1x.png 1x, img/raster/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/raster/before-tablet@1x.png 1x, img/raster/before-tablet@2x.png 2x">
-              <img class="intro__img" src="img/raster/before-mobile@1x.png" srcset="img/raster/before-mobile@2x.png 2x" alt="Фото Бориса в начале диеты">
-            </picture>
+      </div>
+      <div class="slider">
+        <div class="slider__before">
+          <picture class="slider__picture">
+            <source media="(min-width: 1200px)" srcset="img/raster/before-desktop@1x.png 1x, img/raster/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/raster/before-tablet@1x.png 1x, img/raster/before-tablet@2x.png 2x">
+            <img class="intro__img" src="img/raster/before-mobile@1x.png" srcset="img/raster/before-mobile@2x.png 2x" alt="Фото Бориса в начале диеты">
+          </picture>
+        </div>
+        <div class="slider__after">
+          <picture class="slider__picture">
+            <source media="(min-width: 1200px)" srcset="img/raster/after-desktop@1x.png 1x, img/raster/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/raster/after-tablet@1x.png 1x, img/raster/after-tablet@2x.png 2x">
+            <img class="intro__img" src="img/raster/after-mobile@1x.png" srcset="img/raster/after-mobile@2x.png 2x" alt="Фото Бориса в начале диеты">
+          </picture>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__control" type="button">Было</button>
+          <div class="slider__scale">
+              <div class="slider__bar"></div>
           </div>
-          <div class="slider__after">
-            <picture class="slider__picture">
-              <source media="(min-width: 1200px)" srcset="img/raster/after-desktop@1x.png 1x, img/raster/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/raster/after-tablet@1x.png 1x, img/raster/after-tablet@2x.png 2x">
-              <img class="intro__img" src="img/raster/after-mobile@1x.png" srcset="img/raster/after-mobile@2x.png 2x" alt="Фото Бориса в начале диеты">
-            </picture>
-          </div>
-          <div class="slider__controls">
-            <button class="slider__control" type="button">Было</button>
-            <div class="slider__scale">
-                <div class="slider__bar"></div>
-            </div>
-            <div class="slider__toggle"></div>
-            <button class="slider__control" type="button">Стало</button>
-          </div>
+          <div class="slider__toggle"></div>
+          <button class="slider__control" type="button">Стало</button>
         </div>
       </div>
     </section>

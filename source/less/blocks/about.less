@@ -1,6 +1,6 @@
 .about__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   font-size: 36px;
   font-weight: 400;
@@ -10,14 +10,32 @@
 .about__list {
   margin: 0;
   padding: 0;
-  padding-left: 80px;
 
   list-style: none;
 }
 
 .about__item {
-  width: 185px;
+  position: relative;
+
   margin-bottom: 20px;
+  padding-left: 80px;
+  width: 185px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: @green;
+  }
+
+  &--leaf {
+    background-image: url(/img/raster/advantage-leaf@1x.png);
+  }
 }
 
 .about__item:last-child {
