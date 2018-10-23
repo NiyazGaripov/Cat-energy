@@ -1,5 +1,5 @@
 .example {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 35px;
 
   background-color: @light-gray;
@@ -7,7 +7,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   font-size: 36px;
   font-weight: 400;
@@ -16,21 +16,43 @@
 
 .example__desription {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
+
+  letter-spacing: 1.4px;
 }
 
 .example__wrapper {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .example__result {
+  flex-basis: 124px;
+  padding: 8px 5px;
+  box-sizing: border-box;
+  height: 55px;
+
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
 }
 
 .example__text {
+  margin: 0 14px;
+  margin-top: 5px;
+  padding: 0 14px;
+  display: inline-block;
+  vertical-align: top;
+
   font-size: 12px;
+  line-height: 16px;
+
+  background-color: @light-gray;
 }
 
 .example__expenses {
