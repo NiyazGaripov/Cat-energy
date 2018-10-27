@@ -1,13 +1,55 @@
+.slider__before,
+.slider__after {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 320px;
+}
+
+.slider__after {
+  display: none;
+}
+
 .slider__controls {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider__control {
   font: inherit;
   font-size: 16px;
+  text-transform: uppercase;
 
   background-color: transparent;
   border: none;
 
   cursor: pointer;
+}
+
+.slider__scale {
+  position: relative;
+
+  margin: 0 10px;
+}
+
+.slider__bar {
+  width: 85px;
+  height: 12px;
+
+  background-color: @white;
+  border: 1px solid @dark-gray;
+  border-radius: 9px;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: @green;
+  border: none;
+  border-radius: 8px;
 }
