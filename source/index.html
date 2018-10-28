@@ -110,8 +110,14 @@
         <h2 class="example__title">Живой пример</h2>
         <p class="example__desription">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренеровок. При этом он не менял своих привычек и по-прежнему спит 16 часов в день.</p>
         <div class="example__wrapper">
-          <div class="example__result">5 кг <span class="example__text">снижение веса</span> </div>
-          <div class="example__result">60 дней <span class="example__text">затрачено времени</span> </div>
+          <div class="example__result">
+            <strong class="example__indicator">5 кг</strong>
+            <p class="example__text">снижение веса</p>
+          </div>
+          <div class="example__result">
+            <strong class="example__indicator">60 дней</strong>
+            <p class="example__text">затрачено времени</p>
+          </div>
         </div>
         <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
       </div>
@@ -134,7 +140,7 @@
           <button class="slider__control" type="button">Было</button>
           <div class="slider__scale">
               <div class="slider__bar"></div>
-              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle" type="button" aria-label="Переключатель слайдера"></button>
           </div>
           <button class="slider__control" type="button">Стало</button>
         </div>
