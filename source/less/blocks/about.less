@@ -21,17 +21,21 @@
 .about__item {
   position: relative;
 
-  margin-bottom: 26px;
-  padding-left: 80px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 
   letter-spacing: 1px;
 
   &::before {
     content: "";
 
-    position: absolute;
+    position: static;
     left: 0;
 
+    flex-shrink: 0;
+    display: block;
+    margin-right: 20px;
     width: 60px;
     height: 60px;
 
