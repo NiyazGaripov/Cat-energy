@@ -2,6 +2,31 @@
   margin-bottom: 25px;
 
   box-shadow: 0 -1px 0 0 @gray;
+
+  &--more {
+    position: relative;
+
+    margin-bottom: 0;
+    padding-top: 74px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 32px;
+      left: calc(50% - 15px);
+
+      width: 30px;
+      height: 2px;
+
+      background-color: @dark-gray;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .card__wrapper {
