@@ -85,6 +85,8 @@
   font-size: 16px;
   text-transform: uppercase;
 
+  cursor: pointer;
+
   &--radio {
     &::before {
       content: "";
@@ -99,14 +101,56 @@
       height: 30px;
 
       border-radius: 50%;
-      border: 2px solid @gray;
+      border: 1px solid @gray;
     }
   }
+
+  &--check {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -8px;
+      left: 0;
+
+      width: 30px;
+      height: 30px;
+
+      border: 1px solid @gray;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -2px;
+      left: 8px;
+
+      width: 24px;
+      height: 8px;
+
+      border-left: solid 3px @green;
+      border-bottom: solid 3px @green;
+
+      transform: rotate(-45deg);
+
+      opacity: 0;
+    }
+  }
+}
+
+.form__label:hover::before,
+.form__input:focus + .form__label::before {
+  border: 1px solid @dark-gray;
 }
 
 .form__input:checked ~ .form__label--radio::before {
   background-color: @green;
   background-clip: content-box;
+}
+
+.form__input:checked + .form__label--check::after {
+  opacity: 1;
 }
 
 .form__textarea {
