@@ -1,4 +1,5 @@
 .form__fieldset {
+  position: relative;
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
@@ -6,8 +7,6 @@
   border: 0;
 
   &--goal {
-    position: relative;
-
     &::before,
     &::after {
       content: "";
@@ -28,18 +27,26 @@
       bottom: -26px;
     }
   }
+
+  &--contact,
+  &--comment {
+    margin-bottom: 27px;
+  }
 }
 
 .form__legend {
-  position: relative;
-
   margin-bottom: 30px;
   padding: 0;
-
-  width: 100%;
+  padding-right: 20px;
 
   font-size: 24px;
   line-height: 28px;
+
+  background-color: @white;
+
+  &--contact {
+    width: 190px;
+  }
 
   &::before {
     content: "";
@@ -103,7 +110,7 @@
 }
 
 .form__textarea {
-  padding: 12px;
+  padding: 15px 12px;
   box-sizing: border-box;
   width: 100%;
   height: 150px;
