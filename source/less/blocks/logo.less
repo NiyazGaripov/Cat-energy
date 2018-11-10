@@ -10,6 +10,34 @@
   }
 }
 
+.logo__icon {
+  &--cat {
+    @media @tablet {
+      display: none;
+    }
+  }
+
+  &--cat-hero {
+    display: none;
+
+    @media @tablet {
+      display: block;
+    }
+
+    @media @desktop {
+      display: none;
+    }
+  }
+
+  &--cat-superhero {
+    display: none;
+
+    @media @desktop {
+      display: block;
+    }
+  }
+}
+
 .logo__icon-text {
   margin: 0 auto;
 }
