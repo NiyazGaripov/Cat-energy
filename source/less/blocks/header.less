@@ -2,10 +2,19 @@
   position: relative;
 }
 
+.header__wrapper {
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+  }
+}
+
 .header__logo {
   padding: 10px 50px 14px 20px;
 
   @media @tablet {
-    padding: 24px 30px;
+    padding: 0;
   }
 }
