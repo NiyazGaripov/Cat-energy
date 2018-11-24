@@ -19,6 +19,14 @@
   padding: 0;
 
   list-style: none;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    counter-reset: item;
+  }
 }
 
 .about__item {
@@ -31,8 +39,28 @@
   letter-spacing: 1px;
 
   @media @tablet {
+    margin-bottom: 87px;
     display: block;
-    width: 210px;
+    width: calc(50% - 30px);
+    min-height: 230px;
+
+    counter-increment: item;
+
+    &::after {
+      content: counter(item);
+
+      position: absolute;
+      top: -15px;
+      right: 75px;
+
+      min-width: 136px;
+
+      font-size: 281px;
+      line-height: 235px;
+      color: @light-gray;
+
+      z-index: -1;
+    }
   }
 
   &::before {
@@ -53,6 +81,8 @@
     background-size: 50px 50px;
 
     @media @tablet {
+      margin-bottom: 33px;
+
       width: 80px;
       height: 80px;
     }
@@ -105,4 +135,11 @@
 
 .about__description {
   margin: 0;
+
+  @media @tablet {
+    width: 245px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
