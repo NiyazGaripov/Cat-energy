@@ -9,6 +9,13 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 46px;
+
+  @media @tablet {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+    line-height: 62px;
+  }
 }
 
 .example__desription {
@@ -16,12 +23,31 @@
   margin-bottom: 27px;
 
   letter-spacing: 1.4px;
+
+  @media @tablet {
+    margin-bottom: 57px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__wrapper {
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.example__wrapper-result {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+
+  @media @tablet {
+    margin-right: auto;
+    width: 365px;
+  }
 }
 
 .example__result {
@@ -35,12 +61,22 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+
+  @media @tablet {
+    padding: 15px 5px;
+    height: 67px;
+  }
 }
 
 .example__indicator {
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
+
+  @media @tablet {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__text {
@@ -60,4 +96,10 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  @media @tablet {
+    padding-top: 18px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
