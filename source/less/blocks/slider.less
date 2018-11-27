@@ -1,12 +1,22 @@
 .slider__before,
 .slider__after {
-  margin: 0 auto;
   margin-bottom: 38px;
-  width: 320px;
 }
 
 .slider__after {
   display: none;
+}
+
+.slider__img {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 240px;
+
+  @media @tablet {
+    width: 690px;
+    height: 517px;
+  }
 }
 
 .slider__controls {
