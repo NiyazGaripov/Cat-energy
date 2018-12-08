@@ -1,10 +1,37 @@
+.slider {
+  position: relative;
+
+  margin: 0 auto;
+  width: 768px;
+}
+
 .slider__before,
 .slider__after {
   margin-bottom: 38px;
 }
 
+.slider__before {
+  @media @tablet {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    padding-left: 50px;
+    box-sizing: border-box;
+    width: 50%;
+
+    background-color: @light-gray;
+
+    overflow: hidden;
+  }
+}
+
 .slider__after {
   display: none;
+
+  @media @tablet {
+    display: block;
+  }
 }
 
 .slider__img {
