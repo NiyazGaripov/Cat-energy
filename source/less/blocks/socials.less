@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 20px;
   padding: 20px 0;
@@ -9,13 +10,43 @@
   list-style: none;
 
   box-shadow: 0 1px 0 0 darken(@gray, 5%), 0 -1px 0 0 darken(@gray, 5%);
+
+  @media @tablet {
+    flex-grow: 1;
+    margin-right: 50px;
+    margin-bottom: 0;
+
+    box-shadow: none;
+  }
 }
 
 .socials__item {
   flex-basis: 50px;
   text-align: center;
+
+  @media @tablet {
+    text-align: right;
+  }
 }
 
 .socials__icon {
   fill: @dark-gray;
+
+
+  @media @tablet {
+    &--vk {
+      width: 32px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--facebook {
+      width: 15px;
+      height: 29px;
+    }
+  }
 }
