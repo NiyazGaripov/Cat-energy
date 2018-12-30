@@ -1,5 +1,9 @@
 .catalog {
   box-shadow: 0 1px 0 0 @gray;
+
+  @media @tablet {
+    box-shadow: none;
+  }
 }
 
 .catalog__title {
@@ -9,4 +13,18 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media @tablet {
+    margin-bottom: 160px;
+    font-size: 60px;
+    line-height: 62px;
+  }
+}
+
+.catalog__wrapper {
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
