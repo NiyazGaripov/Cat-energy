@@ -24,6 +24,10 @@
   padding: 0;
 
   list-style: none;
+
+  @media @tablet {
+    margin-bottom: 70px;
+  }
 }
 
 .additional-products__item {
@@ -35,7 +39,7 @@
   @media @tablet {
     display: flex;
     flex-wrap: wrap;
-    padding: 25px 38px;
+    padding: 25px 38px 29px;
 
     box-shadow: 0 0 0 1px #f2f2f2;
 
@@ -105,16 +109,24 @@
   background-repeat: no-repeat;
 
   @media @tablet {
+    display: flex;
+    align-items: center;
+    padding: 65px 90px;
     width: 710px;
 
     background-image: url("../img/raster/gift-photo-mobile@2x.jpg");
-    background-position: center -295px;
+    background-position: center -345px;
     background-size: cover;
   }
 }
 
 .additional-products__icon {
   margin-bottom: 42px;
+
+  @media @tablet {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 }
 
 .additional-products__text {
@@ -122,4 +134,12 @@
 
   font-size: 16px;
   color: @white;
+
+  @media @tablet {
+    width: 198px;
+
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+  }
 }
