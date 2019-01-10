@@ -15,6 +15,30 @@
 
     font-size: 36px;
     line-height: 40px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 25px;
+
+      display: block;
+      width: 100vw;
+      height: 3px;
+
+      background-color: @green;
+
+      z-index: -1;
+    }
+
+    &::before {
+      right: 100%;
+    }
+
+    &::after {
+      left: calc(100% + 4px);
+    }
   }
 }
 
