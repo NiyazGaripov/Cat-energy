@@ -13,6 +13,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media @tablet {
+    padding-left: 40px;
+  }
 }
 
 .data__label {
@@ -21,6 +25,11 @@
 
   font-size: 16px;
   text-transform: uppercase;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .data__input {
@@ -29,6 +38,13 @@
 
   font: inherit;
   font-size: 16px;
+
+  @media @tablet {
+    padding: 10px 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   .placeholder({
     color: @dark-gray;
