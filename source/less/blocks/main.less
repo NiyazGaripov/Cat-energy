@@ -1,3 +1,7 @@
+.main {
+  overflow: hidden;
+}
+
 .main__intro {
   margin-bottom: 23px;
   padding-top: 25px;
@@ -35,14 +39,26 @@
 
 .main__catalog {
   padding: 25px 0;
+
+  @media @tablet {
+    padding: 35px 0;
+  }
 }
 
 .main__additional-products {
   margin-bottom: 35px;
   padding-top: 25px;
+
+  @media @tablet {
+    margin-bottom: 70px;
+  }
 }
 
 .main__program {
   margin-bottom: 15px;
   padding-top: 15px;
+
+  @media @tablet {
+    padding-top: 35px;
+  }
 }
