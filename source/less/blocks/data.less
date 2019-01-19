@@ -3,6 +3,19 @@
   padding: 0;
 
   list-style: none;
+
+  @media @desktop {
+    &--contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .data__item {
+        width: 570px;
+      }
+    }
+  }
 }
 
 .data__item {
@@ -17,6 +30,11 @@
   @media @tablet {
     padding-right: 35px;
     padding-left: 40px;
+  }
+
+  @media @desktop {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
