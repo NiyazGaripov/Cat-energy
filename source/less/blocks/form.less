@@ -1,3 +1,11 @@
+.form__fieldset-wrapper {
+  @media @desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .form__fieldset {
   position: relative;
   margin: 0;
@@ -5,6 +13,12 @@
   padding: 0;
 
   border: 0;
+
+  &--data-pet {
+    @media @desktop {
+      width: 570px;
+    }
+  }
 
   &--goal {
     &::before,
@@ -39,6 +53,12 @@
 
       border: 1px solid @gray;
     }
+
+    @media @desktop {
+      margin: 0;
+      padding: 33px 30px;
+      width: 570px;
+    }
   }
 
   &--contact,
@@ -51,6 +71,18 @@
 
     &--additionally {
       margin-bottom: 12px;
+    }
+  }
+
+  &--contact {
+    @media @desktop {
+      margin-bottom: 52px;
+    }
+  }
+
+  &--additionally {
+    @media @desktop {
+      margin-bottom: 20px;
     }
   }
 }
@@ -132,6 +164,12 @@
       width: 630px;
     }
   }
+
+  @media @desktop {
+    &--additionally {
+      width: 1220px;
+    }
+  }
 }
 
 .form__item {
@@ -151,6 +189,13 @@
     &--additionally {
       margin-bottom: 50px;
       width: 225px;
+    }
+  }
+
+  @media @desktop {
+    &--additionally {
+      width: 245px;
+      box-sizing: border-box;
     }
   }
 }
@@ -277,6 +322,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media @desktop {
+    width: 1220px;
+  }
 }
 
 .form__wrapper {
@@ -291,6 +340,11 @@
     margin-bottom: 72px;
     width: 630px;
   }
+
+  @media @desktop {
+    margin-bottom: 0;
+    width: 1220px;
+  }
 }
 
 .form__details {
@@ -300,5 +354,11 @@
   @media @tablet {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  @media @desktop {
+    width: 570px;
+
+    text-align: left;
   }
 }
