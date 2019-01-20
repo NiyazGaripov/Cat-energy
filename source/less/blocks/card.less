@@ -58,6 +58,21 @@
 
       border: 1px solid @light-gray;
     }
+
+    @media @desktop {
+      padding: 165px 35px 40px;
+    }
+  }
+
+  @media @desktop {
+    width: 245px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -90,6 +105,11 @@
 
   @media @tablet {
     width: 245px;
+  }
+
+  @media @desktop {
+    padding: 0 40px;
+    box-sizing: border-box;
   }
 }
 
@@ -168,5 +188,9 @@
 
     font-size: 18px;
     line-height: 20px;
+  }
+
+  @media @desktop {
+    margin-bottom: 67px;
   }
 }
