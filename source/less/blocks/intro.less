@@ -1,14 +1,25 @@
-.intro {
-  @media @mobile-only {
+@media @mobile-only {
+  .intro {
     background-color: @green;
     background-image: linear-gradient(to top, @white 97px, transparent 97px), url("../img/raster/index-background-mobile@1x.jpg"), linear-gradient(to top, @white 216px, @green 216px);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: linear-gradient(to top, @white 97px, transparent 97px), url("../img/raster/index-background-mobile@2x.jpg"), linear-gradient(to top, @white 216px, @green 216px);
+    }
   }
 }
 
 .intro__wrapper {
+  @media @desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.intro__content {
   color: @white;
   text-align: center;
 
@@ -18,6 +29,11 @@
 
     color: @black;
     text-align: left;
+  }
+
+  @media @desktop {
+    padding: 0 80px;
+    padding-right: 0;
   }
 }
 
@@ -34,6 +50,10 @@
 
     font-size: 60px;
     line-height: 62px;
+  }
+
+  @media @desktop {
+    margin-bottom: 40px;
   }
 }
 
@@ -55,6 +75,11 @@
 
   @media @tablet {
     margin-bottom: 0;
+  }
+
+  @media @desktop {
+    margin-top: -50px;
+    margin-left: -55px;
   }
 }
 
