@@ -63,6 +63,15 @@
     }
   }
 
+  @media @desktop {
+    margin-bottom: 80px;
+    width: 245px;
+
+    &::after {
+      right: -5px;
+    }
+  }
+
   &::before {
     content: "";
 
@@ -93,7 +102,7 @@
 
     background-image: url("/img/raster/advantage-leaf@1x.png");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/raster/advantage-leaf@2x.png");
     }
   }
@@ -103,7 +112,7 @@
 
     background-image: url("/img/raster/advantage-powder@1x.png");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/raster/advantage-powder@2x.png");
     }
   }
@@ -113,7 +122,7 @@
 
     background-image: url("/img/raster/advantage-dining@1x.png");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/raster/advantage-dining@2x.png");
     }
   }
@@ -123,7 +132,7 @@
 
     background-image: url("/img/raster/advantage-clock@1x.png");
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("/img/raster/advantage-clock@2x.png");
     }
   }
