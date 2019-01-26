@@ -2,29 +2,31 @@
   position: relative;
 
   &--index {
-    &::before {
-      content: "";
+    @media @desktop {
+      &::before {
+        content: "";
 
-      position: absolute;
-      top: 0;
-      right: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
 
-      width: 50%;
-      min-height: 700px;
+        width: 50%;
+        min-height: 700px;
 
-      background-color: @green;
-      background-image: url("../img/raster/index-background-desktop@1x.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 680px auto;
+        background-color: @green;
+        background-image: url("../img/raster/index-background-desktop@1x.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 680px auto;
 
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/raster/index-background-desktop@2x.jpg");
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+          background-image: url("../img/raster/index-background-desktop@2x.jpg");
+        }
       }
-    }
 
-    .main-nav__link {
-      color: @white;
+      .main-nav__link {
+        color: @white;
+      }
     }
   }
 }
