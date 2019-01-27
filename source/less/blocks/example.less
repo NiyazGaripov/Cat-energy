@@ -1,5 +1,15 @@
 .example {
   background-color: @light-gray;
+
+  @media @tablet {
+    background-image: linear-gradient(to bottom, @white 57%, @light-gray 57%);
+  }
+
+  @media @desktop {
+    display: flex;
+
+    background-image: linear-gradient(to bottom, @white 29%, @light-gray 29%);
+  }
 }
 
 .example__title {
@@ -16,6 +26,11 @@
     font-size: 60px;
     line-height: 62px;
   }
+
+  @media @desktop {
+    padding-top: 50px;
+    margin-bottom: 145px;
+  }
 }
 
 .example__desription {
@@ -29,6 +44,11 @@
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media @desktop {
+    padding-right: 105px;
+    margin-bottom: 70px;
   }
 }
 
@@ -48,6 +68,10 @@
   @media @tablet {
     margin-right: auto;
     width: 365px;
+  }
+
+  @media @desktop {
+    margin-bottom: 45px;
   }
 }
 
@@ -89,6 +113,14 @@
   line-height: 16px;
 
   background-color: @light-gray;
+
+  @media @tablet {
+    background-color: @white;
+  }
+
+  @media @desktop {
+    background-color: @light-gray;
+  }
 }
 
 .example__expenses {
