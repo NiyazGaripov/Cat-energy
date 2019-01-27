@@ -279,6 +279,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .form__label:hover::before,
@@ -325,6 +329,11 @@
 
   @media @desktop {
     width: 1220px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid @dark-gray;
   }
 }
 

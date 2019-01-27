@@ -29,9 +29,23 @@
   }
 }
 
+.socials__link {
+  outline: none;
+
+  &:hover .socials__icon,
+  &:focus .socials__icon {
+    fill: @green;
+  }
+
+  &:active .socials__icon {
+    fill: darken(@green, 10%);
+  }
+}
+
 .socials__icon {
   fill: @dark-gray;
 
+  transition: 0.2s;
 
   @media @tablet {
     &--vk {

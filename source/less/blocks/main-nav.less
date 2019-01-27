@@ -99,6 +99,14 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  outline: none;
+
+  &--active {
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid @green;
+  }
+
   @media @tablet {
     font-size: 18px;
     font-weight: 400;
@@ -106,5 +114,14 @@
 
   @media @desktop {
     font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

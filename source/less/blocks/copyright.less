@@ -12,8 +12,23 @@
 
     letter-spacing: 2px;
   }
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    .copyright__icon {
+      fill: darken(@green, 10%);
+    }
+  }
 }
 
 .copyright__icon {
   fill: @dark-gray;
+
+  transition: 0.2s;
 }

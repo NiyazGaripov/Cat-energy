@@ -142,6 +142,8 @@
   border: none;
   border-radius: 8px;
 
+  cursor: pointer;
+
   @media @tablet {
     top: -14px;
     left: 50%;
@@ -154,6 +156,8 @@
 
     border: 1px solid @gray;
     border-radius: 50%;
+
+    outline: none;
 
     &::after {
       content: "";
@@ -171,5 +175,14 @@
 
       transform: translate(-50%, -50%);
     }
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border: 2px solid @green;
   }
 }

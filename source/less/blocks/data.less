@@ -61,6 +61,8 @@
   font: inherit;
   font-size: 16px;
 
+  outline: none;
+
   @media @tablet {
     padding: 10px 20px;
     padding-right: 35px;
@@ -73,6 +75,11 @@
     color: @dark-gray;
     text-transform: uppercase;
   });
+
+  &:hover,
+  &:focus {
+    border: 2px solid @dark-gray;
+  }
 }
 
 .data__icon {

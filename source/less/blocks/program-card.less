@@ -102,6 +102,8 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  outline: none;
+
   &::before {
     content: "";
 
@@ -144,9 +146,14 @@
       left: 135px;
     }
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.program-card__link:hover {
+.program-card__link:hover,
+.program-card__link:focus {
   &::before {
     width: 25px;
   }
