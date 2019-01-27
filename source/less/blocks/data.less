@@ -19,6 +19,8 @@
 }
 
 .data__item {
+  position: relative;
+
   display: flex;
   align-items: center;
   margin-bottom: 18px;
@@ -53,6 +55,7 @@
 
 .data__input {
   padding: 10px;
+  padding-right: 35px;
   width: 100%;
 
   font: inherit;
@@ -60,6 +63,7 @@
 
   @media @tablet {
     padding: 10px 20px;
+    padding-right: 35px;
 
     font-size: 20px;
     line-height: 20px;
@@ -69,4 +73,17 @@
     color: @dark-gray;
     text-transform: uppercase;
   });
+}
+
+.data__icon {
+  position: absolute;
+  right: 14px;
+
+  @media @tablet {
+    right: 50px;
+  }
+
+  @media @desktop {
+    right: 15px;
+  }
 }
