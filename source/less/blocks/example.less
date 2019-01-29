@@ -12,6 +12,13 @@
   }
 }
 
+.example__wrapper {
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example__title {
   margin: 0;
   margin-bottom: 28px;
@@ -52,15 +59,16 @@
   }
 }
 
-.example__wrapper {
+.example__info {
   @media @tablet {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    width: 500px;
   }
 }
 
-.example__wrapper-result {
+.example__info-result {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
