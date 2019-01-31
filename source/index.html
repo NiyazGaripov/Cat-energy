@@ -195,7 +195,7 @@
     </section>
     <article class="map">
       <h2 class="visually-hidden">Адрес офиса на карте</h2>
-      <div class="map__interactive"></div>
+      <div class="map__interactive" id="map"></div>
       <picture class="map__picture">
         <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/bg-map-desktop@1x.webp 1x, img/webp/bg-map-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/bg-map-tablet@1x.webp 1x, img/webp/bg-map-tablet@2x.webp 2x">
@@ -253,6 +253,8 @@
   </footer>
   <script src="js/lib/picturefill.min.js"></script>
   <script src="js/lib/svgxuse.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGHt_OEYXdVRzpyPXC5ZI8oSGGdTtclso&callback=initMap" async defer></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
